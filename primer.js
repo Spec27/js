@@ -52,12 +52,12 @@ switch (language) {
 }
 console.log(mesagge); */
 
-/* for (let i = 0; i<110; i += 5){
+/* for (let i = 0; i<110; i += 10){
     console.log(i);
-} */
+}
+ */
 
-
-let totalSpent = 5000;
+/* let totalSpent = 5000;
 let payment = 500;  
 let discont = 0;
 
@@ -82,3 +82,32 @@ payment -=payment * discont;
 console.log(`Заказ ${payment} Скидка ${discont * 100}%`);
 totalSpent += payment;
 console.log(`Потрачено всего в магазине ${totalSpent}`);
+ */
+
+
+/* const nambers = [54, 12, 435, 86, 6, 3, 98,2];
+let smallNamber = nambers [0];
+for (const namber of nambers) {
+    if (namber < smallNamber) {
+        smallNamber = namber;
+    }
+}
+console.log( 'Самое маленькое число', smallNamber)
+ */
+
+
+                       /* АНАЛОГИЧНО */
+
+
+/* const nambers = [54, 12, 435, 86, 6, 3, 98,2];
+let bigNamber = nambers [0];
+for (const namber of nambers) {
+    if (namber > bigNamber) {
+        bigNamber = namber;
+    }
+}
+console.log( 'Самое большое число', bigNamber) */
+
+
+
+
