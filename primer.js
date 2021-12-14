@@ -52,12 +52,12 @@ switch (language) {
 }
 console.log(mesagge); */
 
-/* for (let i = 0; i<110; i += 10){
+/* for (let i = 0; i<110; i += 5){
     console.log(i);
-}
- */
+} */
 
-/* let totalSpent = 5000;
+/* 
+let totalSpent = 5000;
 let payment = 500;  
 let discont = 0;
 
@@ -101,6 +101,7 @@ console.log( 'Самое маленькое число', smallNamber)
 
 /* const nambers = [54, 12, 435, 86, 6, 3, 98,2];
 let bigNamber = nambers [0];
+
 for (const namber of nambers) {
     if (namber > bigNamber) {
         bigNamber = namber;
@@ -109,5 +110,898 @@ for (const namber of nambers) {
 console.log( 'Самое большое число', bigNamber) */
 
 
+
+
+/* const work = function (r, d) {
+    return r * d;
+}
+const r1 = work(30, 13);
+console.log("Результат роботы функции :", r1) */
+
+
+
+/* const logins = ['sergey', 'andrey', 'anton', 'vasiliy', 'evgeniy'];
+
+
+const findLogin = function (allLogin, loginToFined) {
+    
+    for (const login of allLogin) {
+        
+        if (login === loginToFined) {
+
+        return  `пользователь  ${loginToFined} обнаружен`;
+        }    
+    }
+    return `пользователь  ${loginToFined} не найден`;
+}
+
+const r1 = findLogin(logins, 'anton');
+console.log(r1);
+const r2 = findLogin(logins, 'ggg');
+console.log(r2);
+const r3 = findLogin(logins, 'vasiliy');
+console.log(r3);
+const r4 = findLogin(logins, 'sergey');
+console.log(r4);
+const r5 = findLogin(logins, 'ggg');
+console.log(r5); */
+
+
+
+/* 
+const sms = function (rezult) {
+    return rezult.toLowerCase().join('-');
+}
+console.log(sms('Делаем всю строку в нижнем регистре через тире')) */
+
+
+// Перебераем сумму  не обявленных аргументов в новом масиве
+/* 
+const add = function (...args) {
+    let total = 0;
+    for (const arg of args) {
+        total += arg;
+    }
+    return total;
+}
+console.log(add(1, 2, 2, 4, 4, 5,));
+console.log(add(1, 3, 10, 4, 8, 7, 7)); */
+
+
+
+
+// Задание
+/* Напиши функцию filterArray(numbers, value),
+ которая принимает массив чисел (параметр numbers) и возвращает новый массив,
+  в котором будут только те элементы массива numbers, которые больше чем значение параметра value (число). */
+
+/* const filterArray = function (numbers, value)
+{
+    // Change code below this line
+    let array = [];
+    for (number of numbers) {
+        
+        if (number > value) {
+            array.push(number) 
+       }
+}
+    return array;
+ 
+   // Change code above this line
+}
+console.log(filterArray([1, 2, 3, 4, 5], 3));
+
+console.log(filterArray([12, 24, 8, 41, 76], 38));
+console.log(filterArray([12, 24, 8, 41, 76], 20));
+ */
+
+
+
+/* const fruct = ['aple', 'mango', 'banana', 'ananas'];
+const indexElement = fruct.length - 1;
+
+for (let i = 0; i <=indexElement; i += 1){
+    fruct[i] += " вкусный фрукт";  
+}
+console.table(fruct) */
+
+
+
+
+/* // найти в массыве суму всех четных чисел
+const namber = [1, 4, 6, 7, 9, 3, 2, 6, 5, 33, 35, 77, 44, 22, 88, 99, 2];
+//  1 - Создать переменную в которую сплюсую все четные числа
+let allNamber = 0;
+//  2 - перебрать масив
+for (let i = 0; i < namber.length; i += 1){
+    if (namber[i] % 2 === 0) {
+        console.log(namber[i])
+        // 3 Сплюсовать сууму всех четных чисел
+        allNamber += namber[i];
+        
+    } 
+}console.log('Сума всех четных чисел равна :', allNamber) 
+
+ */
+
+//  Вариант 2
+
+/* const namber = [1, 4, 6, 7, 9, 3, 2, 6, 5, 33, 35, 77, 44, 22, 88, 99, 2];
+let allNamber = 0;
+for (const nambers of namber) {
+    if (nambers % 2 !== 0) {
+        console.log(nambers)
+        // 3 Сплюсовать сууму всех  не четных чисел 
+        allNamber += nambers;
+    }
+}
+console.log('Сума всех не четных чисел равна :', allNamber) */
+
+
+// Обработать массив,развернуть массив,вырезать foo, перевести его в строку разделенную пробелами.
+
+/* const arr = ['BEST', 'the', 'foo', 'is', 'JS'];
+const nevArr1 = arr.slice(0,2);
+const nevArr2 = arr.slice(3);
+const nevArr3 = nevArr1.concat( nevArr2).join(' ');
+console.log(nevArr3)
+ */
+
+
+
+
+
+
+
+// ---------------ОБЬЕКТЫ------------
+
+
+
+
+/* const book = {
+    title: "The Last Kingdom",
+    author: "Bernard Cornwell",
+    genres: ["historical prose", "adventure"],
+    rating: 8.38,
+    specil: 'bookmaker',
+  };
+  
+  for (const key in book) {
+    // Ключ
+    console.log(key);
+    // Значение свойства с таким ключом
+    console.log(book[key]);
+} */
+
+
+
+/* const playlist = {
+    name: 'my pleylist',
+    rating: 8.5,
+    track: ['track-1', 'track-2', 'track-3'],
+    
+    chengeName( newName ) {
+        console.log(playlist);
+        this.name = newName
+    },
+    chengeRating(newRating) {
+        this.rating=newRating
+
+    },
+    addNewTreck(track) {
+        this.track.push(track);
+        this.trackCount = this.track.length;
+    },
+    trackCount() {
+        return this.track.length;
+    }
+
+};
+playlist.chengeName("Новый Плеилист");
+playlist.chengeRating(10);
+playlist.addNewTreck('track-4');
+playlist.addNewTreck('track-5');
+console.log(playlist.trackCount()) */
+
+
+
+/* const friends = [
+    { name: "Sergey" , online: false },
+    { name: "Andrey" , online: true},
+    { name: "Ruslan" , online: false},
+    { name: "Evgenii", online: true },
+    {name: "Spec27" , online: false}
+];
+ */
+// ******** Задача 1***************
+//  Зделать строку с  трех первых имен разделенных пробелом  с свойства ключа Name
+/* const getAllFriends = function (allFriends) {
+    
+    const names = [];
+    for (const friend of allFriends) {
+        names.push(friend.name);
+    
+    }
+    return names;
+}
+console.log(getAllFriends(friends).splice(0,3).join('-'))
+ */
+
+
+
+// ***********Задача 2***************
+// Найти в масиве с обектами Имена которыйе Онлайн , значение функции взято с переменной с масивом.
+/* const getOnlineAllFriends = function (allFriends) {
+    
+    const onlineFriends = [];
+    for (const friend of allFriends) {
+        console.log(friend)
+      console.log(friend.online)  
+        if (friend.online) {
+            onlineFriends.push(friend)
+       }  
+    }
+    return onlineFriends;
+}
+console.log(getOnlineAllFriends(friends)) */
+
+
+
+
+// ********** Задача 3 ****************
+//  Найти в масиве с обектами Имена которыйе Офлайн , значение функции взято с переменной с масивом.
+/* const getOflineAllFriends = function (allFriends) {
+    const oflineFriends = [];
+    for (const friend of allFriends) {
+        console.log(friend.online)
+        if (!friend.online) {
+            oflineFriends.push(friend) 
+        }
+    }
+    return oflineFriends;
+}
+console.log(getOflineAllFriends(friends)) */
+
+
+// ********Задача 4 ****************
+//  Обеденить друзей которые онлайн в  масив онлайн . Друзей которые не онлайн в масив Офлай
+/* const splitFriendsByStatus = function (allFriends) {
+    const friendsByStatus = {
+        online:  [],
+        ofline:  [],
+    };
+    
+    for (const friend of allFriends) {
+        if (friend.online) {
+            friendsByStatus.online.push(friend);
+            continue;
+        }
+        friendsByStatus.ofline.push(friend);
+    }
+    return friendsByStatus;
+}
+console.log(splitFriendsByStatus(friends))
+
+
+
+
+const x = {
+a:12,
+    b: 23,
+    e: 33,
+    c: 45,
+}
+console.log(Object.keys(x));
+console.log(Object.values(x)); */
+
+
+/* const user = {
+    name: "Jacques Gluke",
+    tag: "jgluke",
+    stats: {
+      followers: 5603,
+      views: 4827,
+        likes: 1308,
+        options: {
+            color: 'red',
+            bacgraund: 'till',
+      }
+    },
+  };
+  
+  const {
+    name,
+    tag,
+      stats: { followers, views: userViews, likes: userLikes = 0,
+        options: {color: userColor ,bacgraund: userBacgraund,}
+      },
+  } = user;
+  
+  console.log(name); // Jacques Gluke
+  console.log(tag); // jgluke
+  console.log(followers); // 5603
+  console.log(userViews); // 4827
+console.log(userLikes); // 1308
+console.log(userColor);
+console.log(userBacgraund); */
+
+
+
+
+// *****************Задача***************
+// Напиши функцию countTotalSalary(salaries) которая принимает объект зарплат,
+// где имя свойства это имя сотрудника, а значение свойства это зарплата.
+// Функция должна рассчитать общую сумму зарплат сотрудников и вернуть её.
+// Используй переменную totalSalary для хранения общей суммы зарплаты.
+
+
+/* function countTotalSalary(salaries) {
+    let totalSalary = 0;
+    // Change code below this line
+    const name = Object.values(salaries)
+    for (const value of name) {
+        totalSalary+=value
+  
+        console.log(totalSalary)
+    }
+    // Change code above this line
+    return totalSalary;
+}
+countTotalSalary({ mango: 100, poly: 150, alfred: 80 }) */
+
+
+
+
+
+// ************Задача****************
+// Перебери массив объектов colors используя цикл for...of.
+// Добавь в массив hexColors значения свойств hex, а в массив rgbColors значения свойств rgb из всех объектов массива colors.
+/* 
+const colors = [
+    { hex: "#f44336", rgb: "244,67,54" },
+    { hex: "#2196f3", rgb: "33,150,243" },
+    { hex: "#4caf50", rgb: "76,175,80" },
+    { hex: "#ffeb3b", rgb: "255,235,59" },
+  ];
+  
+  const hexColors = [];
+  const rgbColors = [];
+  // Change code below this line
+  for (const color of colors){
+      hexColors.push(color.hex);
+      rgbColors.push(color.rgb);
+}
+  console.log(hexColors,rgbColors) */
+
+
+
+
+//   **********Задача************
+// Напиши функцию getProductPrice(productName)
+//  которая принимает один параметр productName - название продукта.
+// Функция ищет объект продукта с таким именем(свойство name) в массиве products и возвращает его цену(свойство price).
+// Если продукт с таким названием не найден, функция должна возвращать null.
+//   const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+//   ];
+  
+// function getProductPrice(productName) {
+    
+//       for (const product of  products) {
+          
+//           if (product.name===productName) {
+//               return product.price;
+//           }
+//       }
+//     return null
+//   }
+// console.log(getProductPrice("Radar"))
+// console.log(getProductPrice("Grip"))
+// console.log(getProductPrice("Scanner"))
+// console.log(getProductPrice("Droid"))
+// console.log(getProductPrice("Engine"))
+
+
+
+
+// ************Задача************
+// Напиши функцию getAllPropValues(propName) которая принимает один параметр propName - имя (ключ) свойства.
+// Функция должна вернуть массив всех значений свойства с таким именем из каждого объекта в массиве products.
+// Если в объектах нет свойства с таким именем, функция должна вернуть пустой массив.
+/* const products = [
+    { name: "Radar", price: 1300, quantity: 4 },
+    { name: "Scanner", price: 2700, quantity: 3 },
+    { name: "Droid", price: 400, quantity: 7 },
+    { name: "Grip", price: 1200, quantity: 9 },
+  ];
+  
+function getAllPropValues(propName) {
+    const allMeanings = [];
+    // Change code below this line 
+  for(const product of products){
+          
+      
+      
+    }
+    return allMeanings
+  }
+  console.log(getAllPropValues("name")) */
+  
+/* const highTemperatures = {
+    yesterday: 28;
+    */
+
+
+/* {const defaultSettings = {
+    theme: "light",
+    public: true,
+    withPassword: false,
+    minNumberOfQuestions: 10,
+    timePerQuestion: 60,
+  };
+  const overrideSettings = {
+    public: false,
+    withPassword: true,
+    timePerQuestion: 30,
+  };
+  // Change code below this line
+const finalSettings = { ...defaultSettings, ...overrideSettings };
+  console.log(finalSettings)} */
+    
+//   **********Задача************
+// Напиши функцию makeTask(data) которая принимает один параметр data - объект со следующими свойствами.
+
+// text - текст задачи.
+// category - категория задачи.
+// priority - приоритет задачи.
+
+// Функция должна составить и вернуть новый объект задачи, не изменяя напрямую параметр data.
+// В новом объекте должно быть свойство completed, значение которого хранится в одноимённой локальной переменной.
+// В параметре data гарантированно будет только свойство text, а остальные два, category и priority, могут отсутствовать.
+// Тогда, в новом объекте задачи, в свойствах category и priority должны быть значения по умолчанию,
+// хранящиеся в одноимённых локальных переменных.
+
+/* function makeTask(data) {
+    const completed = false;
+    const category = "General";
+    const priority = "Normal";
+    // Change code below this line
+    const newData = { completed, category, priority, ...data };
+    return newData;
+    // Change code above this line
+}
+
+  console.log(makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" })) */
+
+
+
+// Change code below this line
+
+/* function add(...args) {
+    let total = 0;
+    for (const arg of args) {
+        total += arg
+        
+}
+return total
+    // Change code above this line
+    
+  }
+  
+console.log(add(74, 11, 62, 46, 12, 36))   */
+
+
+
+
+// **************Задача*********************
+// Функция findMatches() принимает произвольное количество аргументов.
+//  Первым аргументом всегда будет массив чисел, а остальные аргументы будут просто числами.
+// Дополни код функции так, чтобы она возвращала новый массив matches, в котором будут только те аргументы,
+//  начиная со второго, которые есть в массиве первого аргумента.
+// Например, findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7) должна вернуть массив [1, 2], потому что только они есть в массиве первого аргумента.
+
+
+/* function findMatches( arrayOfNumbers,... theNumbers) {
+    const matches = []; // Don't change this line
+    for (const theNumber of arrayOfNumbers) {
+        if (theNumbers.includes(theNumber)) {
+            matches.push(theNumber)
+      }
+  }
+    // Change code above this line
+    return matches;
+  }
+console.log(findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7))   */
+
+
+
+
+// *************Задача**************************
+// Добавь объекту bookShelf ещё два метода, которые пока что будут возвращать просто строки по аналогии с getBooks() и addBook(bookName).
+// Метод removeBook(bookName) будет удалять книгу по имени. Возвращает строку "Deleting book <имя книги>", где <имя книги> это значение параметра bookName.
+// Метод updateBook(oldName, newName) будет обновлять название книги на новое.
+// Возвращает строку "Updating book <старое имя> to <новое имя>", где < старое имя > и < новое имя > это значения параметров oldName и newName соотвественно.
+
+/* const bookShelf = {
+    // Change code below this line
+    books: ["The last kingdom", "The guardian of dreams"],
+    getBooks() {
+      return "Returning all books";
+    },
+    addBook(bookName) {
+      return `Adding book ${bookName}`;
+    },
+    removeBook(bookName) {
+        return `Deleting book ${bookName}`   
+    },
+    updateBook(oldName, newName) {
+        return `Updating book ${oldName} to ${newName}`
+    }
+    // Change code above this line
+};
+console.log(bookShelf.getBooks());
+console.log(bookShelf.updateBook("Sands of dune", "Dune"))  */
+
+
+
+// *****************Задача************************
+/* const atTheOldToad = {
+    potions: [
+        { name: "Speed potion", price: 460 },
+        { name: "Dragon breath", price: 780 },
+        { name: "Stone skin", price: 520 },
+    ],
+    
+    // Change code below this line
+    getPotions() {
+        return this.potions;
+        
+    },
+    
+ 
+    addPotion(newPotion) {
+        for (let potion of this.potions) {
+            if (potion.name === newPotion.name) {
+                return `Error! Potion ${newPotion.name} is already in your inventory!`
+            }
+        }
+       
+        this.potions.push(newPotion);
+    },
+
+    removePotion(potionName) {
+        for (let i = 0; i < this.potions.length; i += 1) {
+            const item = this.potions[i];
+            if (potionName === item.name) {
+                return this.potions.splice(i, 1);
+            }
+        }
+        return `Potion ${potionName} is not in inventory!`
+    },
+    updatePotionName(oldName, newName) {
+        for (let i = 0; i < this.potions.length; i += 1) {
+            
+            const item = this.potions[i];
+            if (oldName === item.name) {
+                return item.name = newName
+            }
+        }
+        return `Potion ${oldName} is not in inventory!`;
+
+     
+        // Change code above this line
+    },
+}
+console.log(atTheOldToad.getPotions()) */
+
+/* const academy ={
+    name: 'Sergey',
+    age: 35,
+    adress: {
+        sity: 'lviv',
+        stret: 'Franka',
+    }
+}
+if ('name' in academy) {
+    console.log(academy.adress.sity);
+}
+ *//* {const positions = ['june', 'middle', 'signer', 'teamLead'];
+const levels = [1, 2, 3, 4, 5, 6, 7, 8, 9,];
+const technologys = ['Js', 'Html', 'Css', 'Sass', 'Git', 'Github', 'Visual Studio Code', 'Figma'];
+const Deadlines = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday',];
+
+const perfectTermsOfReference = [
+    { Deadline: Deadlines },
+    { technology: technologys },
+    { complexity: {
+            level:levels,
+            position: positions ,
+        },
+    },
+];
+
+const [Deadline, technology, complexity,] = perfectTermsOfReference;
+console.log(Deadline);} */
+
+
+// КОЛБЕК фУНКЦИЯ
+/* {const doMath = function (a, b,c, calbeck) {
+    
+    const result = calbeck(a, b,c);
+    console.log(result);
+
+}
+const add = function (x, y,n) {
+    return x * y +n;
+    }
+    const sub = function (x, y, n) {
+        return x / y - n;
+    }
+    doMath(2, 3, 5, add)
+    doMath(10,2,2,sub)
+} */
+
+// Аналог 
+/* {const doMath = (a, b,c, calbeck)=> {
+    
+    const result = calbeck(a, b,c);
+    console.log(result);
+
+}
+const add = (x, y,n)=> {
+    return x * y +n;
+    }
+    const sub = (x, y, n)=> {
+        return x / y - n;
+    }
+    doMath(2, 9, 5, add)
+    doMath(10,2,2,sub)
+}
+ */
+
+
+// Слушатель событий
+/* {
+    const buttonNev = document.querySelector('.js-button');
+    const arguments = function () {
+    console.log('Клик по кнопке '+ Date.now())
+}
+buttonNev.addEventListener('click',arguments)
+}
+ */
+/* {
+    const buttonNev = document.querySelector('.js-button');
+    const arguments = () => console.log('Клик по кнопке ' + Date.now());
+    
+buttonNev.addEventListener('click',arguments)
+} */
+
+
+
+
+
+/* 
+{
+    const onGetPositionSucces = function (position) {
+        console.log(position);
+    }
+    const onGetPositionError = function (error) {
+        console.log(error);
+    }
+    window.navigator.geolocation.getCurrentPosition(onGetPositionSucces, onGetPositionError);
+
+} */
+// Аналог
+/* const onGetPositionSucces = (position)=> console.log(position);
+const onGetPositionError = (error)=> console.log(error);
+    
+window.navigator.geolocation.getCurrentPosition(onGetPositionSucces, onGetPositionError); */
+
+
+
+
+
+// ПРИМЕР КАЛБЕК ФУНКЦИИ 2
+/* const filter = function (array, test) {
+    const filteredArray = [];
+    for (const els of array) {
+        console.log(els);
+        const passed = test(els);
+        if (passed) {
+            filteredArray.push(els);    
+        }
+}
+return filteredArray
+}
+
+const calback1 = function (value) {
+    return value >= 3; 
+}
+const r1 = filter([1, 2, 3, 4, 5, 6, 7, 8, 9, 0], calback1);
+console.log(r1);
+
+const calback2 = function (value) {
+    return value>=5 ;
+}
+const r2 = filter([2, 4, 5, 6, 7, 8, 9,22,3,9,44,21,65], calback2);
+console.log(r2) */
+
+// Аналог
+
+/* const filter = (array, test)=>{
+    const filteredArray = [];
+    for (const els of array) {
+        console.log(els);
+        const passed = test(els);
+        if (passed) {
+            filteredArray.push(els);    
+        }
+}
+return filteredArray
+}
+
+
+const calback1 =(value) =>value >= 3; 
+    
+const r1 = filter([1, 2, 3, 4, 5, 6, 7, 8, 9, 0], calback1);
+console.log(r1);
+
+
+const calback2 = (value)=>value>=5 ; 
+ 
+const r2 = filter([2, 4, 5, 6, 7, 8, 9,22,3,9,44,21,65], calback2);
+console.log(r2) */
+
+
+
+
+
+// **********ЗАМыКАЮЩИЕ ФУНКЦИИ КОНЦЕПЦИЯ**********
+
+/* const fna = function (param) {
+    const work = 'Ета функция возращаеться в другой функции';
+
+    const inerFunction = function () {
+        console.log(param);
+        console.log(work);
+        console.log('ето вызов другой функции')
+
+    }
+    return inerFunction;
+    }
+const fnb = fna(555);
+fnb();
+console.log(fnb)
+    */
+// АНАЛОГ
+
+/* const fna = (param)=> {
+    const work = 'Ета функция возращаеться в другой функции';
+
+    const inerFunction = ()=> {
+        console.log(param);
+        console.log(work);
+        console.log('ето вызов другой функции')
+
+    }
+    return inerFunction;
+    }
+const fnb = fna(555);
+fnb();
+console.log(fnb) */
+
+
+
+/* const makeShef = function (name) {
+    
+    const makeDish = function(dish) {
+        console.log(`${name} готовит ${dish}`);
+    }
+    return makeDish;
+}
+const oneShef2 = makeShef('Антон');
+oneShef2('Шаурму');
+oneShef2('Люлякебаб');
+
+const oneShef = makeShef('Валера');
+oneShef('Вареники');
+oneShef('Борщ');
+ */
+
+// АНАЛОГ
+
+/* const makeShef = (name)=> {
+    
+    const makeDish = (dish)=> {
+        console.log(`${name} готовит ${dish}`);
+    }
+    return makeDish;
+}
+const oneShef2 = makeShef('Антон');
+oneShef2('Шаурму');
+oneShef2('Люлякебаб');
+
+const oneShef = makeShef('Валера');
+oneShef('Вареники');
+oneShef('Борщ');
+ */
+
+
+/* const rounder = function (meaning) {
+    return function (namber) {
+        return Number(namber.toFixed(meaning))
+    };
+};
+const rounder1 = rounder(1);
+const rounder2 = rounder(2);
+const rounder3 = rounder(3);
+console.log(rounder1(43.9989));
+console.log(rounder2(22.1111));
+console.log(rounder3(2.9934)); */
+
+
+
+// Приватные переменные
+/* const myLibrauryFact = function () {
+    let value = 0;
+    const add = function (num) {
+        value += num;
+    };
+    return {
+        add:add,
+        getValue() {
+            return value;
+        }
+    };
+};
+const myLib = myLibrauryFact();
+console.log(myLib.getValue);
+console.log(myLib)
+console.log(myLib.getValue());
+myLib.add(10);
+console.log(myLib.getValue()) */
+
+
+
+
+/* const salaryManagerFactory = function (emploeName, baseSalary = 0) {
+    let salary = baseSalary;
+    return {
+        raise(amount) {
+            salary += amount;
+            
+        },
+        lover(amount) {
+            salary -= amount;
+        },
+        current() {
+            return `Текущая зарплата ${emploeName}:  ${salary} грн`;
+        },
+    };
+}
+const salaryManager = salaryManagerFactory('Вася',12500);
+console.log(salaryManager.current()) */
+
+
+
+
+//   СТРЕЛОЧНЫЕ ФУНКЦИИ КОНЦЕПЦИЯ
+
+/* const bmw = function (a, b, c) {
+    console.log(a,b,c)
+    return a + b + c;
+}
+console.log(bmw(2, 5, 8));
+
+// Аналогично
+
+const bmw1 = (a, b, c) => {
+    console.log(a,b,c)
+    return a + b + c;
+} 
+console.log(bmw1(55, 3, 78)); */
 
 
