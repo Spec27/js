@@ -744,7 +744,7 @@ const add = function (x, y,n) {
     doMath(10,2,2,sub)
 } */
 
-// Аналог 
+// Аналог
 /* {const doMath = (a, b,c, calbeck)=> {
     
     const result = calbeck(a, b,c);
@@ -1004,4 +1004,513 @@ const bmw1 = (a, b, c) => {
 } 
 console.log(bmw1(55, 3, 78)); */
 
+
+/* const pureMultiply = (array, value) => {
+    const newArray = [];
+  
+    array.forEach(element => {
+      newArray.push(element * value);
+    });
+  
+    return newArray;
+  };
+  
+  const numbers = [1, 2, 3, 4, 5,7,8,9,3];
+  const doubledNumbers = pureMultiply(numbers, 4);
+  
+  // Не произошло мутации исходных данных
+  console.log(numbers); // [1, 2, 3, 4, 5]
+  // Функция вернула новый массив с изменёнными данными
+  console.log(doubledNumbers); // [2, 4, 6, 8, 10] */
+  
+
+
+ /*  const students = [
+    { name: "Манго", score: 83 },
+    { name: "Поли", score: 59 },
+    { name: "Аякс", score: 37 },
+    { name: "Киви", score: 94 },
+    { name: "Хьюстон", score: 64 },
+  ];
+  
+  const names = students.map(student => student.name);
+console.log(names); // ['Манго', 'Поли', 'Аякс', 'Киви', 'Хьюстон']
+const scores = students.map(student => student.score);
+console.log(scores);  // Получаем масив оценок студента
+ */
+
+
+/* const LOW_SCORE = 50;
+const HIGH_SCORE = 80;
+const students = [
+  { name: "Манго", score: 83 },
+  { name: "Поли", score: 59 },
+  { name: "Аякс", score: 37 },
+  { name: "Киви", score: 94 },
+  { name: "Хьюстон", score: 64 },
+];
+
+const best = students.filter(student => student.score >= HIGH_SCORE);
+console.log(best); // Массив объектов с именами Манго и Киви
+
+const worst = students.filter(student => student.score < LOW_SCORE);
+console.log(worst); // Массив с одним объектом Аякс
+
+
+const averages = students.filter(student =>( student.score>= LOW_SCORE && student.score < HIGH_SCORE)
+  );
+  console.log(averages); // Массив объектов с именами Поли и Хьюстон
+
+// В коллбек-функции удобно деструктуризировать свойства объекта
+const average = students.filter(
+  ({ score }) => score >= LOW_SCORE && score < HIGH_SCORE
+);
+console.log(average); // Массив объектов с именами Поли и Хьюстон
+ */
+
+
+
+       //  ********** Задача 7
+   
+/* function filterArray(numbers, value) {
+    const filteredNumbers = [];
+    // Change code below this line
+  
+   
+   numbers.forEach((number)=> {
+   
+     if(number > value) {
+     filteredNumbers.push(number)
+     
+     }
+   
+   })
+  
+    // Change code above this line
+    return filteredNumbers;
+}
+console.log(filterArray([1, 2, 3, 4, 5], 3))   */
+
+/* function getCommonElements(firstArray, secondArray) {
+    const commonElements = [];
+    // Change code below this line
+    firstArray.forEach((array)=>{if(secondArray.includes(array)){commonElements.push(array)} })
+    
+  
+    return commonElements;
+    // Change code above this line
+}
+console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
+console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27])) */
+
+
+
+// *********************МЕТОД REDUCE*********************
+/* const salary = {
+    tema: 30,
+    vasya: 50,
+    jekson: 33,
+    kristin:88,
+};
+
+const totalSalary = Object.values(salary).reduce((total, value) =>{return total + value},0 );
+console.log(totalSalary); */
+
+
+// ************************Количество часов******************
+/* const allGemers = [
+    { id: 'playr-1', name: 'Vasia', timePlayd: 43, online: true, },
+    { id: 'playr-2', name: 'Viktor', timePlayd: 93, online: true, },
+    { id: 'playr-3', name: 'Andrey', timePlayd: 87, online: true, },
+    { id: 'playr-4', name: 'denis', timePlayd: 21, online: true, },
+];
+const allTotaltimePlayd = allGemers.reduce((totalTime, plaer) => totalTime + plaer.timePlayd, 0);
+console.log(allTotaltimePlayd); */
+
+
+
+// **************Корзина товаров************************
+/* const cart = [
+    { lable: 'aple', price: 98, quantity: 3, },
+    { lable: 'banana', price: 44, quantity: 2, },
+    { lable: 'pinacle', price: 21, quantity: 7, },
+    { lable: 'tomato', price: 90, quantity: 5, },
+];
+const totalProduct = cart.reduce((total, { price, quantity }) => total + price * quantity, 0);
+console.log(totalProduct); */
+
+
+
+// *********************** получаем масив всех тегов
+// *********************** и фильтруем их по количеству
+/* const tweets = [
+    { id: '001', likes: 5, tags: ['js', 'nodejs'] },  
+    { id: '002', likes: 7, tags: ['html', 'css'] }, 
+    { id: '003', likes: 9, tags: ['figma', 'photoshop'] }, 
+    { id: '004', likes: 51, tags: ['react', 'nodejs','html'] }, 
+    { id: '005', likes: 4, tags: ['js', 'nodejs','react'] }, 
+    
+];
+const allTags = tweets.reduce((acc, tweet) => {
+    return [...acc,...tweet.tags];
+}, [])
+console.log(allTags)
+
+
+
+
+const tagsStats = allTags.reduce((acc, tag) => {
+ 
+    return { ...acc, [tag]: acc[tag] ? acc[tag] + 1:1,}
+
+}, {});
+console.log(tagsStats);
+ */
+
+
+// МЕТОД SORT
+/* const nambers = [1, 5, 7, 3, 2, 4, 8, 5, 3, 6, 4,];
+
+const nambersSert = [...nambers].sort((a,b)=>a-b);
+console.log(nambersSert);
+
+const reversNanbSert = [...nambers].sort((a, b) => b - a);
+console.log(reversNanbSert);
+
+const reversNambSert2 = [...nambers].sort((a, b) => a - b).reverse();
+console.log(reversNambSert2) */
+
+
+/* 
+const changeEven=(numbers, value) =>{
+    // Change code below this line
+    const newArray = [];
+    
+    numbers.forEach(namber => {
+        if (namber % 2 === 0) { newArray.push(namber + value) }
+        else newArray.push(namber) ;
+    }
+    ); 
+      
+    
+    return newArray
+    
+    // Change code above this line
+  }
+  
+
+  console.log(changeEven([1, 2, 3, 4, 5], 10)) */
+  /* const planets = ["Earth", "Mars", "Venus", "Jupiter"];
+// Change code below this line
+const planetsLengths = planets.map(planet => planet.length);
+console.log(planetsLengths) */
+
+
+
+/* const users=[
+    {
+      name: "Moore Hensley",
+      email: "moorehensley@indexia.com",
+      eyeColor: "blue",
+      friends: ["Sharron Pace"],
+      isActive: false,
+      balance: 2811,
+      gender: "male"
+    },
+    {
+      name: "Sharlene Bush",
+      email: "sharlenebush@tubesys.com",
+      eyeColor: "blue",
+      friends: ["Briana Decker", "Sharron Pace"],
+      isActive: true,
+      balance: 3821,
+      gender: "female"
+    },
+    {
+      name: "Ross Vazquez",
+      email: "rossvazquez@xinware.com",
+      eyeColor: "green",
+      friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+      isActive: false,
+      balance: 3793,
+      gender: "male"
+    },
+    {
+      name: "Elma Head",
+      email: "elmahead@omatom.com",
+      eyeColor: "green",
+      friends: ["Goldie Gentry", "Aisha Tran"],
+      isActive: true,
+      balance: 2278,
+      gender: "female"
+    },
+    {
+      name: "Carey Barr",
+      email: "careybarr@nurali.com",
+      eyeColor: "blue",
+      friends: ["Jordan Sampson", "Eddie Strong", "Adrian Cross"],
+      isActive: true,
+      balance: 3951,
+      gender: "male"
+    },
+    {
+      name: "Blackburn Dotson",
+      email: "blackburndotson@furnigeer.com",
+      eyeColor: "brown",
+      friends: ["Jacklyn Lucas", "Linda Chapman", "Adrian Cross", "Solomon Fokes"],
+      isActive: false,
+      balance: 1498,
+      gender: "male"
+    },
+    {
+      name: "Sheree Anthony",
+      email: "shereeanthony@kog.com",
+      eyeColor: "brown",
+      friends: ["Goldie Gentry", "Briana Decker"],
+      isActive: true,
+      balance: 2764,
+      gender: "female"
+    }
+  ] */
+
+/* const getSortedFriends = (users) => {
+    const sortedFriends = users.flatMap(user => user.friends).filter((friemd, index, array) => array.indexOf(friemd) === index).sort((a,b)=>a.localeCompare(b));
+  
+    
+    return sortedFriends;
+    
+}; 
+
+console.log(getSortedFriends(users));
+ */
+
+
+
+/* const showTag = function () {
+    console.log('showTag=>this',this);
+    console.log('showTag=>this', this.tag);
+};
+const user ={
+    tag:'mango',
+};
+
+user.showUserTag = showTag;
+console.log('user', user);
+user.showUserTag(); */
+
+/* class User {
+    // Синтаксис объявления метода класса
+    constructor(name, email,age) {
+      // Инициализация свойств экземпляра
+      this.name = name;
+        this.email = email;
+        this.ege = age;
+    }
+  }
+  
+  const mango = new User("Манго", "mango@mail.com",15);
+  console.log(mango); // { name: 'Манго', email: 'mango@mail.com' }
+  
+  const poly = new User("Поли", "poly@mail.com");
+  console.log(poly); // { name: 'Поли', email: 'poly@mail.com' }
+ */
+
+/* const person1 = {
+    name: 'sara',
+};
+console.log(person1);
+
+const person2 = Object.create(person1);
+person2.age = 25;
+console.log(person2);
+console.log(person2.name);
+console.log(person2.age);
+
+const person3 = Object.create(person2);
+person3.clock = 12;
+console.log(person3);
+console.log(person3.name);
+console.log(person3.age); 
+ */
+
+/* 
+const Car = function ( { model, brand, color, price } = {} ) { 
+    console.log(config);
+   
+    this.model = model;
+    this.brand = brand;
+    this.color = color;
+    this.price = price;
+    
+  
+};
+Car.prototype.Argument = function () {
+    console.log('Контекст ссылается на обект myCar', this);
+    console.log('ПОНЯТНО');
+};
+
+Car.prototype.changePrice = function (newPrice) {
+    this.price = newPrice;
+}
+
+
+
+const myCar = new Car({ model: 'laguna', brand: 'Renaut', color: 'Black', price: 21000 });
+myCar.changePrice(19000);
+console.log(myCar);
+
+
+const myCar2 = new Car({ model: 'X-5', brand: 'BMW', color: 'Red', price: 45000 });
+console.log(myCar2);
+
+myCar.Argument();
+myCar2.Argument(); */
+
+
+/* const CounterPlagins = function ({ initialValue = 0, step = 1 } = {}) {
+    this.value = initialValue;
+    this.step = step;
+    
+};
+CounterPlagins.prototype.incriment=function(){
+    this.value += this.step;
+};
+CounterPlagins.prototype.dincriment=function(){
+    this.value -= this.step;
+};
+const counter = new CounterPlagins({ step: 15 });
+const counter1 =new CounterPlagins({step:5})
+console.log(counter);
+
+
+counter.incriment()
+console.log(counter);
+counter1.dincriment();
+console.log(counter1) */
+
+
+
+//  КЛАССЫ
+
+/* class Car{
+    constructor({ model, brand, color, price }={}) { 
+        this.model = model;
+        this._brand = brand;
+        this.color = color;
+        this.price = price;
+    }
+      setPrice(newPrice) { 
+            this.price = newPrice;
+    }
+        getModel(newModel) {
+        
+        this.model=newModel
+    }
+
+    get brand() {
+        return this._brand;
+    }
+    set brand(newBrand) {
+         this._brand=newBrand;
+    }
+  
+};
+
+const myCar = new Car({ model: 'laguna', brand: 'Renaut', color: 'Black', price: 21000 });
+myCar.getModel('LAGUNA 2021');
+myCar.setPrice(35000);
+console.log(myCar);
+myCar.brand = "Suzuki";
+console.log(myCar.brand);
+
+
+const myCar2 = new Car({ model: 'X-5', brand: 'BMW', color: 'Red', price: 45000 });
+console.log(myCar2);
+myCar2.brand='OPEL';
+console.log(myCar2.brand); */
+
+
+
+
+
+
+// НАСЛЕДОВАНИЕ КЛАССОВ
+
+class Hero { 
+    constructor({ name = 'gero', xp = 0 }) {
+        this.name = name;
+        this.xp = xp;
+    }
+  gainXp(amount) {
+        console.log(`${this.name} получает ${amount}`)
+        this.xp += amount; 
+        
+    } 
+  getName(newName) {
+        console.log(`${this.name} получает иммя ${newName}`)
+        this.name = newName; 
+        
+    } 
+};
+
+class Warrior extends Hero{
+    constructor({  weapon,...restProps }={}){
+        super( restProps  );
+        this.weapon = weapon;   
+    }
+    attack() {
+        console.log(`${this.name} атакует с помощью ${this.weapon}`)
+    }
+    
+};
+class Mage extends Hero {
+    constructor({  magicWeapon,...restPropst  }={}) {
+        super(restPropst);
+        this.magicWeapon = magicWeapon;
+    }
+    casts() {
+        console.log(`${this.name} атакует с помощью ${this.magicWeapon}`)
+    }
+};
+
+class Potter extends Mage{
+    constructor({ spell, ...restProps } = {}) {
+        super(restProps);
+        this.spell = spell;
+    }
+    conjure() {
+        console.log(this.spell);
+    }
+
+}
+class Ronald extends Mage{
+    constructor({ chara, ...restProps } = {}) {
+        super(restProps);
+        this.chara = chara;
+    }
+    jampe() {
+        console.log(this.chara)
+    }
+}
+
+const pecheneg = new Warrior({name: "Vasia", xp:10,weapon: "Мечь"});
+console.log(pecheneg);
+pecheneg.getName('Georgiy');
+pecheneg.attack();
+pecheneg.gainXp(1000);
+
+const Druid = new Mage({ name: "Spec",xp: 20,magicWeapon: "Посох"});
+console.log(Druid);
+Druid.casts();
+Druid.gainXp(500);
+
+const grifindor = new Potter({ name: "Garri", xp: 80, magicWeapon: "Метла", spell:"patronus"});
+console.log(grifindor);
+grifindor.casts();
+grifindor.gainXp(1090);
+
+const slizarin = new Ronald({ name: "Ronald", xp: 50, magicWeapon: "Палочка", spell:"Expelearmus"});
+console.log(slizarin);
+slizarin.casts();
+slizarin.gainXp(677);
 
