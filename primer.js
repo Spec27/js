@@ -1,3 +1,4 @@
+"use strict";
 /* let primer = '25px';
 primer = '50px';
 primer = Number.parseInt(primer);
@@ -1436,7 +1437,7 @@ console.log(myCar2.brand); */
 
 // НАСЛЕДОВАНИЕ КЛАССОВ
 
-class Hero { 
+/* class Hero { 
     constructor({ name = 'gero', xp = 0 }) {
         this.name = name;
         this.xp = xp;
@@ -1504,7 +1505,7 @@ console.log(Druid);
 Druid.casts();
 Druid.gainXp(500);
 
-const grifindor = new Potter({ name: "Garri", xp: 80, magicWeapon: "Метла", spell:"patronus"});
+const grifindor = new Potter({ name: "Garri", xp: 80, magicWeapon: "Авада Кедабра", spell:"patronus"});
 console.log(grifindor);
 grifindor.casts();
 grifindor.gainXp(1090);
@@ -1512,5 +1513,16 @@ grifindor.gainXp(1090);
 const slizarin = new Ronald({ name: "Ronald", xp: 50, magicWeapon: "Палочка", spell:"Expelearmus"});
 console.log(slizarin);
 slizarin.casts();
-slizarin.gainXp(677);
+slizarin.gainXp(677);  */
 
+
+
+const number = 10;
+
+for (let i = 0; i < number; i += 1) {
+  if (i % 2 === 1) {
+    continue;
+  }
+
+  console.log("четное i: ", i); // 1, 3, 5, 7, 9
+}
