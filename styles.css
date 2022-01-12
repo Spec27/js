@@ -1,0 +1,48 @@
+.site-nav__link {
+  color: aqua;
+}
+.site-nav__link--curent {
+  color: rgb(255, 8, 0);
+}
+.site-nav__link--next {
+  color: blue;
+  size: 20px;
+}
+
+.site-nav__button--style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 40px;
+  border-radius: 4px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.title__text {
+  color: green;
+  size: 20px;
+}
+
+.js-btn {
+  width: 80px;
+  height: 40px;
+  border-radius: 4px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.js-btn:hover {
+  background-color: green;
+  color: honeydew;
+}
+
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 32px;
+}

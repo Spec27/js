@@ -1,10 +1,8 @@
-"use strict";
+'use strict'; /* {const positions = ['june', 'middle', 'signer', 'teamLead'];
 /* let primer = '25px';
 primer = '50px';
 primer = Number.parseInt(primer);
 console.log('Цена за шт', primer) */
-
-
 
 /* let primer2 = '45.5px';
 primer2='34.2px'
@@ -16,7 +14,6 @@ console.log('цена за 2 шт:', primer2) */
 /* let simbol = 1489.44443;
 simbol = Number(simbol.toFixed(3));
 console.log(simbol); */
-
 
 /* Math.random() * (max - min) + min */
 
@@ -85,7 +82,6 @@ totalSpent += payment;
 console.log(`Потрачено всего в магазине ${totalSpent}`);
  */
 
-
 /* const nambers = [54, 12, 435, 86, 6, 3, 98,2];
 let smallNamber = nambers [0];
 for (const namber of nambers) {
@@ -96,9 +92,7 @@ for (const namber of nambers) {
 console.log( 'Самое маленькое число', smallNamber)
  */
 
-
-                       /* АНАЛОГИЧНО */
-
+/* АНАЛОГИЧНО */
 
 /* const nambers = [54, 12, 435, 86, 6, 3, 98,2];
 let bigNamber = nambers [0];
@@ -110,16 +104,11 @@ for (const namber of nambers) {
 }
 console.log( 'Самое большое число', bigNamber) */
 
-
-
-
 /* const work = function (r, d) {
     return r * d;
 }
 const r1 = work(30, 13);
 console.log("Результат роботы функции :", r1) */
-
-
 
 /* const logins = ['sergey', 'andrey', 'anton', 'vasiliy', 'evgeniy'];
 
@@ -147,14 +136,11 @@ console.log(r4);
 const r5 = findLogin(logins, 'ggg');
 console.log(r5); */
 
-
-
 /* 
 const sms = function (rezult) {
     return rezult.toLowerCase().join('-');
 }
 console.log(sms('Делаем всю строку в нижнем регистре через тире')) */
-
 
 // Перебераем сумму  не обявленных аргументов в новом масиве
 /* 
@@ -167,9 +153,6 @@ const add = function (...args) {
 }
 console.log(add(1, 2, 2, 4, 4, 5,));
 console.log(add(1, 3, 10, 4, 8, 7, 7)); */
-
-
-
 
 // Задание
 /* Напиши функцию filterArray(numbers, value),
@@ -196,8 +179,6 @@ console.log(filterArray([12, 24, 8, 41, 76], 38));
 console.log(filterArray([12, 24, 8, 41, 76], 20));
  */
 
-
-
 /* const fruct = ['aple', 'mango', 'banana', 'ananas'];
 const indexElement = fruct.length - 1;
 
@@ -205,9 +186,6 @@ for (let i = 0; i <=indexElement; i += 1){
     fruct[i] += " вкусный фрукт";  
 }
 console.table(fruct) */
-
-
-
 
 /* // найти в массыве суму всех четных чисел
 const namber = [1, 4, 6, 7, 9, 3, 2, 6, 5, 33, 35, 77, 44, 22, 88, 99, 2];
@@ -238,7 +216,6 @@ for (const nambers of namber) {
 }
 console.log('Сума всех не четных чисел равна :', allNamber) */
 
-
 // Обработать массив,развернуть массив,вырезать foo, перевести его в строку разделенную пробелами.
 
 /* const arr = ['BEST', 'the', 'foo', 'is', 'JS'];
@@ -248,16 +225,7 @@ const nevArr3 = nevArr1.concat( nevArr2).join(' ');
 console.log(nevArr3)
  */
 
-
-
-
-
-
-
 // ---------------ОБЬЕКТЫ------------
-
-
-
 
 /* const book = {
     title: "The Last Kingdom",
@@ -273,8 +241,6 @@ console.log(nevArr3)
     // Значение свойства с таким ключом
     console.log(book[key]);
 } */
-
-
 
 /* const playlist = {
     name: 'my pleylist',
@@ -304,8 +270,6 @@ playlist.addNewTreck('track-4');
 playlist.addNewTreck('track-5');
 console.log(playlist.trackCount()) */
 
-
-
 /* const friends = [
     { name: "Sergey" , online: false },
     { name: "Andrey" , online: true},
@@ -328,8 +292,6 @@ console.log(playlist.trackCount()) */
 console.log(getAllFriends(friends).splice(0,3).join('-'))
  */
 
-
-
 // ***********Задача 2***************
 // Найти в масиве с обектами Имена которыйе Онлайн , значение функции взято с переменной с масивом.
 /* const getOnlineAllFriends = function (allFriends) {
@@ -346,9 +308,6 @@ console.log(getAllFriends(friends).splice(0,3).join('-'))
 }
 console.log(getOnlineAllFriends(friends)) */
 
-
-
-
 // ********** Задача 3 ****************
 //  Найти в масиве с обектами Имена которыйе Офлайн , значение функции взято с переменной с масивом.
 /* const getOflineAllFriends = function (allFriends) {
@@ -362,7 +321,6 @@ console.log(getOnlineAllFriends(friends)) */
     return oflineFriends;
 }
 console.log(getOflineAllFriends(friends)) */
-
 
 // ********Задача 4 ****************
 //  Обеденить друзей которые онлайн в  масив онлайн . Друзей которые не онлайн в масив Офлай
@@ -395,7 +353,6 @@ a:12,
 console.log(Object.keys(x));
 console.log(Object.values(x)); */
 
-
 /* const user = {
     name: "Jacques Gluke",
     tag: "jgluke",
@@ -426,15 +383,11 @@ console.log(userLikes); // 1308
 console.log(userColor);
 console.log(userBacgraund); */
 
-
-
-
 // *****************Задача***************
 // Напиши функцию countTotalSalary(salaries) которая принимает объект зарплат,
 // где имя свойства это имя сотрудника, а значение свойства это зарплата.
 // Функция должна рассчитать общую сумму зарплат сотрудников и вернуть её.
 // Используй переменную totalSalary для хранения общей суммы зарплаты.
-
 
 /* function countTotalSalary(salaries) {
     let totalSalary = 0;
@@ -449,10 +402,6 @@ console.log(userBacgraund); */
     return totalSalary;
 }
 countTotalSalary({ mango: 100, poly: 150, alfred: 80 }) */
-
-
-
-
 
 // ************Задача****************
 // Перебери массив объектов colors используя цикл for...of.
@@ -474,9 +423,6 @@ const colors = [
 }
   console.log(hexColors,rgbColors) */
 
-
-
-
 //   **********Задача************
 // Напиши функцию getProductPrice(productName)
 //  которая принимает один параметр productName - название продукта.
@@ -488,11 +434,11 @@ const colors = [
 //     { name: "Droid", price: 400, quantity: 7 },
 //     { name: "Grip", price: 1200, quantity: 9 },
 //   ];
-  
+
 // function getProductPrice(productName) {
-    
+
 //       for (const product of  products) {
-          
+
 //           if (product.name===productName) {
 //               return product.price;
 //           }
@@ -504,9 +450,6 @@ const colors = [
 // console.log(getProductPrice("Scanner"))
 // console.log(getProductPrice("Droid"))
 // console.log(getProductPrice("Engine"))
-
-
-
 
 // ************Задача************
 // Напиши функцию getAllPropValues(propName) которая принимает один параметр propName - имя (ключ) свойства.
@@ -530,11 +473,10 @@ function getAllPropValues(propName) {
     return allMeanings
   }
   console.log(getAllPropValues("name")) */
-  
+
 /* const highTemperatures = {
     yesterday: 28;
     */
-
 
 /* {const defaultSettings = {
     theme: "light",
@@ -551,7 +493,7 @@ function getAllPropValues(propName) {
   // Change code below this line
 const finalSettings = { ...defaultSettings, ...overrideSettings };
   console.log(finalSettings)} */
-    
+
 //   **********Задача************
 // Напиши функцию makeTask(data) которая принимает один параметр data - объект со следующими свойствами.
 
@@ -577,8 +519,6 @@ const finalSettings = { ...defaultSettings, ...overrideSettings };
 
   console.log(makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" })) */
 
-
-
 // Change code below this line
 
 /* function add(...args) {
@@ -594,16 +534,12 @@ return total
   
 console.log(add(74, 11, 62, 46, 12, 36))   */
 
-
-
-
 // **************Задача*********************
 // Функция findMatches() принимает произвольное количество аргументов.
 //  Первым аргументом всегда будет массив чисел, а остальные аргументы будут просто числами.
 // Дополни код функции так, чтобы она возвращала новый массив matches, в котором будут только те аргументы,
 //  начиная со второго, которые есть в массиве первого аргумента.
 // Например, findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7) должна вернуть массив [1, 2], потому что только они есть в массиве первого аргумента.
-
 
 /* function findMatches( arrayOfNumbers,... theNumbers) {
     const matches = []; // Don't change this line
@@ -616,9 +552,6 @@ console.log(add(74, 11, 62, 46, 12, 36))   */
     return matches;
   }
 console.log(findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7))   */
-
-
-
 
 // *************Задача**************************
 // Добавь объекту bookShelf ещё два метода, которые пока что будут возвращать просто строки по аналогии с getBooks() и addBook(bookName).
@@ -645,8 +578,6 @@ console.log(findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7))   */
 };
 console.log(bookShelf.getBooks());
 console.log(bookShelf.updateBook("Sands of dune", "Dune"))  */
-
-
 
 // *****************Задача************************
 /* const atTheOldToad = {
@@ -709,7 +640,7 @@ console.log(atTheOldToad.getPotions()) */
 if ('name' in academy) {
     console.log(academy.adress.sity);
 }
- *//* {const positions = ['june', 'middle', 'signer', 'teamLead'];
+ */
 const levels = [1, 2, 3, 4, 5, 6, 7, 8, 9,];
 const technologys = ['Js', 'Html', 'Css', 'Sass', 'Git', 'Github', 'Visual Studio Code', 'Figma'];
 const Deadlines = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday',];
@@ -726,7 +657,6 @@ const perfectTermsOfReference = [
 
 const [Deadline, technology, complexity,] = perfectTermsOfReference;
 console.log(Deadline);} */
-
 
 // КОЛБЕК фУНКЦИЯ
 /* {const doMath = function (a, b,c, calbeck) {
@@ -763,7 +693,6 @@ const add = (x, y,n)=> {
 }
  */
 
-
 // Слушатель событий
 /* {
     const buttonNev = document.querySelector('.js-button');
@@ -779,10 +708,6 @@ buttonNev.addEventListener('click',arguments)
     
 buttonNev.addEventListener('click',arguments)
 } */
-
-
-
-
 
 /* 
 {
@@ -800,10 +725,6 @@ buttonNev.addEventListener('click',arguments)
 const onGetPositionError = (error)=> console.log(error);
     
 window.navigator.geolocation.getCurrentPosition(onGetPositionSucces, onGetPositionError); */
-
-
-
-
 
 // ПРИМЕР КАЛБЕК ФУНКЦИИ 2
 /* const filter = function (array, test) {
@@ -856,10 +777,6 @@ const calback2 = (value)=>value>=5 ;
 const r2 = filter([2, 4, 5, 6, 7, 8, 9,22,3,9,44,21,65], calback2);
 console.log(r2) */
 
-
-
-
-
 // **********ЗАМыКАЮЩИЕ ФУНКЦИИ КОНЦЕПЦИЯ**********
 
 /* const fna = function (param) {
@@ -893,8 +810,6 @@ console.log(fnb)
 const fnb = fna(555);
 fnb();
 console.log(fnb) */
-
-
 
 /* const makeShef = function (name) {
     
@@ -930,7 +845,6 @@ oneShef('Вареники');
 oneShef('Борщ');
  */
 
-
 /* const rounder = function (meaning) {
     return function (namber) {
         return Number(namber.toFixed(meaning))
@@ -942,8 +856,6 @@ const rounder3 = rounder(3);
 console.log(rounder1(43.9989));
 console.log(rounder2(22.1111));
 console.log(rounder3(2.9934)); */
-
-
 
 // Приватные переменные
 /* const myLibrauryFact = function () {
@@ -965,9 +877,6 @@ console.log(myLib.getValue());
 myLib.add(10);
 console.log(myLib.getValue()) */
 
-
-
-
 /* const salaryManagerFactory = function (emploeName, baseSalary = 0) {
     let salary = baseSalary;
     return {
@@ -986,9 +895,6 @@ console.log(myLib.getValue()) */
 const salaryManager = salaryManagerFactory('Вася',12500);
 console.log(salaryManager.current()) */
 
-
-
-
 //   СТРЕЛОЧНЫЕ ФУНКЦИИ КОНЦЕПЦИЯ
 
 /* const bmw = function (a, b, c) {
@@ -1004,7 +910,6 @@ const bmw1 = (a, b, c) => {
     return a + b + c;
 } 
 console.log(bmw1(55, 3, 78)); */
-
 
 /* const pureMultiply = (array, value) => {
     const newArray = [];
@@ -1023,10 +928,8 @@ console.log(bmw1(55, 3, 78)); */
   console.log(numbers); // [1, 2, 3, 4, 5]
   // Функция вернула новый массив с изменёнными данными
   console.log(doubledNumbers); // [2, 4, 6, 8, 10] */
-  
 
-
- /*  const students = [
+/*  const students = [
     { name: "Манго", score: 83 },
     { name: "Поли", score: 59 },
     { name: "Аякс", score: 37 },
@@ -1039,7 +942,6 @@ console.log(names); // ['Манго', 'Поли', 'Аякс', 'Киви', 'Хь�
 const scores = students.map(student => student.score);
 console.log(scores);  // Получаем масив оценок студента
  */
-
 
 /* const LOW_SCORE = 50;
 const HIGH_SCORE = 80;
@@ -1069,10 +971,8 @@ const average = students.filter(
 console.log(average); // Массив объектов с именами Поли и Хьюстон
  */
 
+//  ********** Задача 7
 
-
-       //  ********** Задача 7
-   
 /* function filterArray(numbers, value) {
     const filteredNumbers = [];
     // Change code below this line
@@ -1104,8 +1004,6 @@ console.log(filterArray([1, 2, 3, 4, 5], 3))   */
 console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
 console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27])) */
 
-
-
 // *********************МЕТОД REDUCE*********************
 /* const salary = {
     tema: 30,
@@ -1117,7 +1015,6 @@ console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27])) */
 const totalSalary = Object.values(salary).reduce((total, value) =>{return total + value},0 );
 console.log(totalSalary); */
 
-
 // ************************Количество часов******************
 /* const allGemers = [
     { id: 'playr-1', name: 'Vasia', timePlayd: 43, online: true, },
@@ -1128,8 +1025,6 @@ console.log(totalSalary); */
 const allTotaltimePlayd = allGemers.reduce((totalTime, plaer) => totalTime + plaer.timePlayd, 0);
 console.log(allTotaltimePlayd); */
 
-
-
 // **************Корзина товаров************************
 /* const cart = [
     { lable: 'aple', price: 98, quantity: 3, },
@@ -1139,8 +1034,6 @@ console.log(allTotaltimePlayd); */
 ];
 const totalProduct = cart.reduce((total, { price, quantity }) => total + price * quantity, 0);
 console.log(totalProduct); */
-
-
 
 // *********************** получаем масив всех тегов
 // *********************** и фильтруем их по количеству
@@ -1168,7 +1061,6 @@ const tagsStats = allTags.reduce((acc, tag) => {
 console.log(tagsStats);
  */
 
-
 // МЕТОД SORT
 /* const nambers = [1, 5, 7, 3, 2, 4, 8, 5, 3, 6, 4,];
 
@@ -1180,7 +1072,6 @@ console.log(reversNanbSert);
 
 const reversNambSert2 = [...nambers].sort((a, b) => a - b).reverse();
 console.log(reversNambSert2) */
-
 
 /* 
 const changeEven=(numbers, value) =>{
@@ -1201,12 +1092,10 @@ const changeEven=(numbers, value) =>{
   
 
   console.log(changeEven([1, 2, 3, 4, 5], 10)) */
-  /* const planets = ["Earth", "Mars", "Venus", "Jupiter"];
+/* const planets = ["Earth", "Mars", "Venus", "Jupiter"];
 // Change code below this line
 const planetsLengths = planets.map(planet => planet.length);
 console.log(planetsLengths) */
-
-
 
 /* const users=[
     {
@@ -1284,8 +1173,6 @@ console.log(planetsLengths) */
 
 console.log(getSortedFriends(users));
  */
-
-
 
 /* const showTag = function () {
     console.log('showTag=>this',this);
@@ -1367,7 +1254,6 @@ console.log(myCar2);
 myCar.Argument();
 myCar2.Argument(); */
 
-
 /* const CounterPlagins = function ({ initialValue = 0, step = 1 } = {}) {
     this.value = initialValue;
     this.step = step;
@@ -1388,8 +1274,6 @@ counter.incriment()
 console.log(counter);
 counter1.dincriment();
 console.log(counter1) */
-
-
 
 //  КЛАССЫ
 
@@ -1429,11 +1313,6 @@ const myCar2 = new Car({ model: 'X-5', brand: 'BMW', color: 'Red', price: 45000 
 console.log(myCar2);
 myCar2.brand='OPEL';
 console.log(myCar2.brand); */
-
-
-
-
-
 
 // НАСЛЕДОВАНИЕ КЛАССОВ
 
@@ -1515,14 +1394,103 @@ console.log(slizarin);
 slizarin.casts();
 slizarin.gainXp(677);  */
 
+/* 
+const books = [
+    {
+        id: 1,
+        title: "Gari Potter",
+    },
+    {
+        id: 2,
+        title: 'Lord of the Rings',
+    },
+    {
+        id: 3,
+        title: 'Fantastic Сreatures'
+    },
+    {
+        id: 4,
+        title: 'Home Alon'
+    },
+
+];
+const transfornToObject = (books) => {
+    return books.reduce((acc, item) => {
+        const { id } = item;
+        acc[id] = item;
+        return acc;
+    }, {});
+    
+};
+const bookColection = transfornToObject(books);
+console.log(bookColection);
+const foundTheObject = bookColection['1'];
+console.log(foundTheObject); */
+
+/* const newOpen = document.querySelector('opentext');
 
 
-const number = 10;
+newOpen.addEventListener('click', () => {
+   
+}); */
+/* const bodyEl = document.querySelectorAll('.visibleTrue');
+console.log(bodyEl); */
 
-for (let i = 0; i < number; i += 1) {
-  if (i % 2 === 1) {
-    continue;
-  }
+/* const actions = document.querySelectorAll('.js-action button');
+console.log(actions[2].dataset.action); */
 
-  console.log("четное i: ", i); // 1, 3, 5, 7, 9
+/* const newEl = document.querySelector('.action_btn');
+console.log(newEl.classList);
+newEl.classList.add('poher');
+console.log(newEl.classList);
+newEl.classList.remove('action_btn');
+console.log(newEl.classList);
+newEl.classList.replace('poher', 'good');
+console.log(newEl.classList)  */
+
+/* {
+  const curentPageUrl = '/about';
+  const curentPageUrl1 = '/portfolio';
+  const linkEl = document.querySelector(`.site-nav__link[href="${curentPageUrl}"]`);
+  console.log(linkEl);
+  const linkEl1 = document.querySelector(`.site-nav__link[href="${curentPageUrl1}"]`);
+  console.log(linkEl1);
+  linkEl.classList.add('site-nav__link--curent');
+
+  linkEl1.classList.add('site-nav__link--next');
 }
+
+{
+  const showsButton = document.querySelector('button[data-action="close"]');
+  console.log(showsButton);
+  console.log(showsButton.dataset.action);
+} */
+
+/* const titleEl = document.createElement('h1');
+titleEl.classList.add('page-title');
+titleEl.textContent = 'Моя страница';
+console.log(titleEl);
+
+const imgEl = document.createElement('img');
+imgEl.src = 'https://vnokia.net/images/wallpaper/2021/wallpaper_768x1280_20.jpg';
+imgEl.alt = 'Три картинки';
+imgEl.width = 320;
+console.log(imgEl);
+
+const heroEl = document.querySelector('.hero');
+heroEl.append(titleEl, imgEl);
+console.log(heroEl);
+
+const navItemEl = document.createElement('li');
+navItemEl.classList.add('site-nav__item');
+
+const navLinkEl = document.createElement('a');
+navLinkEl.classList.add('site-nav__link');
+navLinkEl.textContent = 'facebook';
+navLinkEl.href = 'https://www.facebook.com/';
+
+const navEl = document.querySelector('.site-nav');
+navEl.insertBefore(navItemEl, navEl.firstElementChild);
+
+console.log(navItemEl);
+navItemEl.appendChild(navLinkEl); */
