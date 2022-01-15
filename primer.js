@@ -1466,7 +1466,7 @@ console.log(newEl.classList)  */
   console.log(showsButton.dataset.action);
 } */
 
-/* const titleEl = document.createElement('h1');
+const titleEl = document.createElement('h1');
 titleEl.classList.add('page-title');
 titleEl.textContent = 'Моя страница';
 console.log(titleEl);
@@ -1493,4 +1493,4 @@ const navEl = document.querySelector('.site-nav');
 navEl.insertBefore(navItemEl, navEl.firstElementChild);
 
 console.log(navItemEl);
-navItemEl.appendChild(navLinkEl); */
+navItemEl.appendChild(navLinkEl);

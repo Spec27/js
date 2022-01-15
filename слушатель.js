@@ -20,7 +20,7 @@
 } */
 
 //  Слушатель форм
-{
+/* {
   const btnEl = document.querySelector('.btn');
   btnEl.classList.add('js-btn');
   const formEl = document.querySelector('.form');
@@ -37,4 +37,23 @@
       console.log(name);
     });
   }
+} */
+
+const refs = {
+  input: document.querySelector('.js-input'),
+  nameLabel: document.querySelector('.js-button > span'),
+  licenseChecbox: document.querySelector('.js-license'),
+  btn: document.querySelector('.js-button'),
+};
+
+refs.input.addEventListener('input', onInputChenge);
+refs.licenseChecbox.addEventListener('change', onLicenseChenge);
+
+function onInputChenge(event) {
+  console.log(event.currentTarget.value);
+  refs.nameLabel.textContent = event.currentTarget.value;
+}
+function onLicenseChenge(event) {
+  console.log(event.currentTarget.checked);
+  refs.btn.disabled = !event.currentTarget.checked;
 }

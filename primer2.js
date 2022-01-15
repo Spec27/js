@@ -4,7 +4,7 @@
 /* const colorPictureOption = [
   { label: 'gren', color: '#00FF7F' },
   { label: 'red', color: '#FF0000' },
-  { label: 'blue', color: '#0000FF' },
+  { label: 'blue', color: '#0000FF' },  
   { label: 'grey', color: '#808080' },
   { label: 'pink', color: '#FFC0CB' },
   { label: 'Yellow ', color: '#FFFF00' },
