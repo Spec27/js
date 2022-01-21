@@ -20,7 +20,7 @@
 } */
 
 //  Слушатель форм
-/* {
+{
   const btnEl = document.querySelector('.btn');
   btnEl.classList.add('js-btn');
   const formEl = document.querySelector('.form');
@@ -37,9 +37,9 @@
       console.log(name);
     });
   }
-} */
+}
 
-const refs = {
+/* const refs = {
   input: document.querySelector('.js-input'),
   nameLabel: document.querySelector('.js-button > span'),
   licenseChecbox: document.querySelector('.js-license'),
@@ -57,3 +57,4 @@ function onLicenseChenge(event) {
   console.log(event.currentTarget.checked);
   refs.btn.disabled = !event.currentTarget.checked;
 }
+ */
