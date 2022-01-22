@@ -20,7 +20,7 @@
 } */
 
 //  Слушатель форм
-{
+/* {
   const btnEl = document.querySelector('.btn');
   btnEl.classList.add('js-btn');
   const formEl = document.querySelector('.form');
@@ -37,7 +37,7 @@
       console.log(name);
     });
   }
-}
+} */
 
 /* const refs = {
   input: document.querySelector('.js-input'),
@@ -58,3 +58,8 @@ function onLicenseChenge(event) {
   refs.btn.disabled = !event.currentTarget.checked;
 }
  */
+
+window.addEventListener('keydown', escp);
+function escp(event) {
+  console.log(event);
+}
