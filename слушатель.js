@@ -59,7 +59,7 @@ function onLicenseChenge(event) {
 }
  */
 
-window.addEventListener('keydown', escp);
+/* window.addEventListener('keydown', escp);
 function escp(event) {
   console.log(event);
-}
+} */

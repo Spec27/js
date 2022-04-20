@@ -1,0 +1,25 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "primer.js",
+  "dependencies": {
+    "handlebars": "^4.7.7",
+    "joi": "^17.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "ppp": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Spec27/js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Spec27/js/issues"
+  },
+  "homepage": "https://github.com/Spec27/js#readme"
+}

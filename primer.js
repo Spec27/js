@@ -641,7 +641,7 @@ if ('name' in academy) {
     console.log(academy.adress.sity);
 }
  */
-const levels = [1, 2, 3, 4, 5, 6, 7, 8, 9,];
+/* const levels = [1, 2, 3, 4, 5, 6, 7, 8, 9,];
 const technologys = ['Js', 'Html', 'Css', 'Sass', 'Git', 'Github', 'Visual Studio Code', 'Figma'];
 const Deadlines = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday',];
 
@@ -656,8 +656,8 @@ const perfectTermsOfReference = [
 ];
 
 const [Deadline, technology, complexity,] = perfectTermsOfReference;
-console.log(Deadline);} */
-
+console.log(Deadline);
+ */
 // КОЛБЕК фУНКЦИЯ
 /* {const doMath = function (a, b,c, calbeck) {
     
@@ -1465,7 +1465,7 @@ console.log(newEl.classList)  */
   console.log(showsButton);
   console.log(showsButton.dataset.action);
 } */
-
+/* 
 const titleEl = document.createElement('h1');
 titleEl.classList.add('page-title');
 titleEl.textContent = 'Моя страница';
@@ -1494,3 +1494,99 @@ navEl.insertBefore(navItemEl, navEl.firstElementChild);
 
 console.log(navItemEl);
 navItemEl.appendChild(navLinkEl);
+ */
+
+/* const startBtn = document.querySelector('.start');
+const stopBtn = document.querySelector('.stop');
+let timerId = null;
+
+startBtn.addEventListener('click', () => {
+  timerId = setInterval(() => {
+    console.log(`PUTIN UILO !  ${Math.random()}`);
+    console.log(date);
+  }, 1000);
+});
+
+stopBtn.addEventListener('click', () => {
+  clearInterval(timerId);
+  console.log(`DEAD ${timerId} PUTIN!`);
+});
+
+const date = new Date();
+console.log(date);
+ */
+
+/* const promise = new Promise((resolve, reject) => {
+  const griatePromise = Math.random() < 0.5;
+
+  setInterval(() => {
+    if (griatePromise) {
+      resolve('Промис Выполнен успешно ');
+    }
+    reject('Провал Ошибка промис не выпонен ');
+  }, 1001);
+});
+
+promise
+  .then(result => {
+    console.log(`🤚${result}`);
+  })
+  .catch(error => {
+    console.log(`😡 ${error}`);
+  })
+  .finally(() => console.log('Ok выполняем в любом случае 🔥'));
+ */
+
+/* const griateCast = spell => {
+  const DELAY = 1000;
+
+  return new Promise((resolve, reject) => {
+    const griatePromise = Math.random() < 0.5;
+    setTimeout(() => {
+      if (griatePromise) {
+        resolve(`Griate ${spell}`);
+      } else {
+        reject('Fak you ❌');
+      }
+    }, DELAY);
+  });
+};
+griateCast('Avada Kedabra ⚔️').then(makeresult).catch(makeerror);
+
+function makeresult(result) {
+  console.log(result);
+}
+
+function makeerror(error) {
+  console.log(error);
+}
+ */
+
+/* function oddOrEven(array) {
+  let strings = 0;
+  for (let namber of array) {
+    namber += 1;
+    if (namber % 2 === 0) {
+      strings = namber;
+      console.log(strings);
+    }
+  }
+}
+oddOrEven([1, 2, 22, 4, 5, 8, 9]); */
+
+/* const arr = [2, 4, 6, 8, 1, 3, 5];
+function arraySum(array) {
+  let sumPositive = 0;
+  let sumNegative = 0;
+  for (let i = 0; i < array.length; i++) {
+    let x = (sumPositive += array[i]);
+    if (x % 2 === 0) {
+      console.log('Вывожу суму четных:', sumPositive);
+    }
+    let y = (sumNegative += array[i]);
+    if (y % 2 !== 0) {
+      console.log(sumNegative);
+    }
+  }
+}
+arraySum(arr); */
