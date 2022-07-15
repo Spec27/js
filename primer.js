@@ -1590,3 +1590,25 @@ function arraySum(array) {
   }
 }
 arraySum(arr); */
+{
+  /* <button id="btn">Кнопка 1</button>;
+
+let buttons = document.querySelectorAll('button');
+
+buttons.forEach(btn => {
+  btn.addEventListener('click', clickHandler);
+});
+
+function clickHandler() {
+  alert(this.textContent);
+} */
+}
+
+let str = 'aaDDddhhgg';
+let result = str.split('').reverse();
+let res = [];
+
+for (let i = 0; i < result.length; i++) {
+  res.push(result[i] + i);
+  console.log(res.toString('').toLowerCase());
+}

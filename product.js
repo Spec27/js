@@ -1,4 +1,4 @@
-export default [
+/* export default [
   {
     name: 'Сервоприводы',
     description:
@@ -56,3 +56,4 @@ export default [
     onSale: false,
   },
 ];
+ */
